@@ -1,0 +1,44 @@
+/*
+when we target a specific html element... all elements on
+the linked html page will be affected by those styles
+
+use the curly braces "{}" after specifying what element
+you want to style
+
+put all the styles you want to effect the element inside the
+curly braces-- if you dont... bad things happen :(
+
+we need to add the colon after the property... the property is the
+style name.
+
+the values are what comes after the property and colon
+
+semicolons at the end of each line are neccesary if you are done
+writing code on that line
+
+divs with nothing inside of them, usually have no height by default,
+but do have a width. this is caused by browsers.
+
+if you add an element that has a height by default in a div, the divs height will
+become that height
+
+pixels are just a tiny unit of measurement
+
+we can use the star selector select all elements
+and apply styles to all elements
+
+we set the margin to 0 in the star selector to get rid of default
+browser margins.
+
+*/
+
+* {
+  margin: 0;
+}
+
+div {
+  background-color: darksalmon;
+  height: 100px;
+  width: 400px;
+  margin: 5px; /* dont worry about this yet */
+}

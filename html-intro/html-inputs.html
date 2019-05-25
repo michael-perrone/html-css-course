@@ -1,0 +1,65 @@
+<!--
+    html attributes give our elements extra functionality and powers
+    you can add html attributes to pretty much all elements
+
+    the type html attribute in an input decides what type of an input it will be
+    there are many different types of inputs
+    email
+    text
+    password
+    submit
+    radio
+    checkbox
+    name in a radio button makes it so only one can be chosen if all names are the same
+
+    placeholder attribute in input gives us some starter text describing what is required in an input
+
+    <select> is how you create a dropdown
+    <option> goes inside select and you can put them text inside option describe that option
+
+    <label> element connects to an input by matching the for html attribute with id html attribute of the input
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>html inputs</title>
+  </head>
+  <body>
+    <input type="text" placeholder="Type Some Text" />
+    <br />
+    <br />
+    <form>
+      Email
+      <input type="email" placeholder="Email" />
+      <br />
+      Password
+      <input type="password" placeholder="Password" />
+      <input type="submit" />
+    </form>
+
+    <br />
+    <br />
+    <h1>What is your favorite type of car</h1>
+    <input type="radio" name="favorite-car" /> Audi
+    <input type="radio" name="favorite-car" /> Tesla
+    <input type="radio" name="favorite-car" /> Ford
+    <br />
+    <br />
+    <h1>what is your favorite food?</h1>
+    <input type="checkbox" name="ourcheckbox" id="pizza" />
+    <label for="pizza">Pizza</label>
+    <input type="checkbox" name="ourcheckbox" id="ice-cream" />
+    <label for="ice-cream">Ice Cream</label>
+
+    <h1>What is your favorite TV show?</h1>
+    <select>
+      <option>Game of Thrones</option>
+      <option>Jersey Shore</option>
+      <option>The Sopranos</option>
+    </select>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+/* 
+ids can be given to any element on a page,
+they usually should be unique
+you give these ids styles in css by typing a hash "#"
+and then the id name right after WITHOUT A SPACE.
+
+classes can also be given to any element
+however, they usually are not unique by element.
+you can classes styles in css by typing a period "."
+and then the classname followed by brackets and putting the 
+styles inside those brackets
+
+0,0,1 is for if you style elements directly using element name
+0,0,1 is the second weakest to star selector which is 0,0,0
+
+classes have a selector specificity of 0,1,0 which is 
+stronger than 0,0,1
+
+ids have the strongest which is 1,0,0
+
+we can combine element, class, and id selectors to get
+a higher selector specificity
+for example: an element and a class would be 0,1,1
+or a class and id would be 1,1,0
+lastly an id a class and an element would be 1,1,1
+
+the style html attribute, which is called inline styling
+will overrule all other selector specificities
+
+*/
+
+#our-second-button {
+  height: 40px;
+  width: 90px;
+  background-color: limegreen;
+  color: white;
+  border: 2px double darkcyan;
+  border-radius: 15px;
+}
+button {
+  background-color: darkblue;
+  color: whitesmoke;
+}
+
+.button-one {
+  background-color: magenta;
+  color: lightblue;
+}
+
+#button-one {
+  color: black;
+}
+
+button#button-one.button-one {
+  color: darkolivegreen;
+}
+
+#button-one.button-one {
+  color: gold;
+}
+
+#first-div {
+  background-color: black;
+  color: white;
+}
+
+#second-h1 {
+  font-size: 80px;
+  color: black;
+}
+
+.turn-me-orange {
+  color: darkorange;
+}

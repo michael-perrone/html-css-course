@@ -1,0 +1,75 @@
+/*
+    each html element can have a margin-right, margin-left,
+    margin-top and margin-bottom
+
+    there is a shorthand property which is just "margin:"
+    the values run in a clockwise order, starting at the top
+    if thereare four values
+
+    if there are two values, the first value is top and bottom.
+    the second, is left and right
+
+    padding has the same shorthand notation that margin does
+    clockwise just like the margin shorthand
+
+    padding is the area between the content and the border
+
+    border-width: is how wide the width of the border width
+    border-style: we explored these, they style the borders differently
+    border-color: just gives the border a color
+    border shorthand is just "border:" and then width, style, color...
+    in that order
+
+    border-radius: it allows us to curve the edges of any element
+
+    margins can also have negative values
+*/
+
+* {
+  margin: 0;
+  border: none;
+}
+
+div {
+  height: 50px;
+  width: 300px;
+  background-color: lightblue;
+  margin-top: 40px;
+  margin-right: 400px;
+  margin-bottom: 18px;
+  margin-left: 100px;
+  margin: -40px 400px 18px 100px;
+  border-bottom: 2px solid black;
+}
+
+h2 {
+  margin: 30px;
+  width: 105px;
+  cursor: pointer;
+}
+
+h2:hover {
+  border-bottom: 2px solid black;
+} /* we will get back to this */
+
+button {
+  cursor: pointer;
+  height: 20px;
+  background-color: darkolivegreen;
+  width: 50px;
+  margin-right: 20px;
+  /* border-width: 3px;
+  border-style: solid;
+  border-color: darkgray; */
+  border: 2.5px double lightgray;
+  border-radius: 14px;
+  color: whitesmoke;
+  padding: 2px 4px 17px 4px;
+}
+
+input {
+  border: 2px solid gray;
+  margin: 20px;
+  padding: 3px 0px 3px 6px;
+  border-radius: 10px;
+}
