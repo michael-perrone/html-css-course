@@ -1,0 +1,56 @@
+/*
+html {
+  font-size: 16px;
+}
+
+p {
+  font-size: 32px;
+  display: inline;
+}
+
+/* rem is just the browser or root font-size multiplied by
+the number we specify... converted into pixels 
+browser font-size to 9px and we say font-size 2rem;
+2 rem = 18px; 2 * 9;
+
+now we set browser font-size to 32px
+
+we are still using 2rem. which means we our now doing
+32 * 2 = 64px
+
+4 * 16 = 64px
+
+#will-use-rem {
+  font-size: 4rem;
+}
+*/
+
+p {
+  font-size: 80px;
+  display: inline;
+}
+
+#now-child-div-but-still-parent-too {
+  display: inline;
+  font-size: 4em;
+}
+
+/* 16px * 2rem = 32px */
+/* 
+ems are converted to pixels by multiplying the number of ems
+times the parent elements font size in pixels
+
+4em * 16 = 64px
+
+64px * 2em = 128px
+*/
+
+/* responsive design 
+   extremely important
+   will talk about this a bunch later
+   A WHOLE BUNCH
+*/
+
+#will-use-em {
+  font-size: 2em;
+}

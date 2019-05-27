@@ -10,7 +10,50 @@ ul {
 
 li {
   display: inline-block;
+  cursor: pointer;
+  line-height: 13px;
 }
+
+/* :hover is a pseudo-class 
+ a colon inside of a css selector always means a pseudo-class or
+ pseudo-element
+*/
+
+li:hover {
+  border-bottom: 1px solid rgb(105, 105, 105);
+}
+
+button {
+  height: 40px;
+  width: 150px;
+  border: none;
+  background-color: rgb(238, 238, 238);
+  font-size: 16px;
+  margin: 0 5px;
+  letter-spacing: 0.3px;
+  color: rgb(100, 100, 100);
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  /* border: 1px solid rgb(173, 173, 173);
+  color: black; */
+  box-shadow: 1px 2px 5px rgb(87, 87, 87);
+  position: relative;
+  top: -3.5px;
+}
+
+button:active {
+  box-shadow: 0px 2px 3px rgb(95, 95, 95);
+  top: 0px;
+}
+
+/*button:focus {
+  border: 2px solid black;
+}
+*/
 
 #nav {
   margin-top: 20px;
@@ -35,8 +78,10 @@ li {
   background-color: rgb(92, 134, 211);
   border-radius: 50%;
   padding-left: 8px;
-  padding-top: 4px;
+  padding-top: 7px;
   padding-bottom: 2px;
+  line-height: 20px;
+  border: none;
 }
 
 #google-h1 {
@@ -58,10 +103,54 @@ li {
   font-size: 20px;
   position: relative;
   top: 30px;
+  outline: none;
+}
+
+#google-input:hover {
+  /* 4 different values you can add 
+  1. the shadow to the right... i hardly use this
+  2. the shadow to the bottom... i use this commonly
+  3. adds a blur effect... very common
+  4. the color
+  */
+  box-shadow: 0px 2px 6px rgb(145, 145, 145);
+}
+
+#google-input:focus {
+  box-shadow: 0px 2px 6px rgb(145, 145, 145);
+}
+
+#button-container {
+  position: relative;
+  top: 65px;
+}
+
+#footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  background-color: rgb(238, 238, 238);
+}
+
+#footer-right-side {
+  position: fixed;
+  right: 26px;
+  display: inline-block;
+}
+
+#ul-footer {
+  margin-left: 30px;
+  margin-bottom: 14px;
+  color: rgb(87, 87, 87);
+  padding-top: 15px;
 }
 
 .separate-nav-items {
   margin-left: 16px;
+}
+
+.separate-footer-items {
+  margin-left: 22px;
 }
 
 .google-letters {
