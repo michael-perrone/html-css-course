@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  margin-right: 22px;
+  font-size: 26px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#main-container-div {
+  display: flex;
+}
+
+#blue-half {
+  background: linear-gradient(to bottom, #4dbbff, #1874ad);
+  color: white;
+}
+
+#text-holder-blue-half {
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 20px;
+  font-family: "Crete Round";
+  animation-name: slide-blue-text-holder;
+  animation-duration: 2s;
+}
+
+@keyframes slide-blue-text-holder {
+  from {
+    color: black;
+    position: absolute;
+    right: 0px;
+  }
+  to {
+    position: absolute;
+    right: 64vw;
+  }
+}
+
+#content-holder-white-half {
+  display: flex;
+  flex-direction: column;
+}
+
+#actual-content-holder-white-half {
+  animation-name: content-white-half-slide-up;
+  animation-duration: 2s;
+}
+
+@keyframes content-white-half-slide-up {
+  from {
+    transform: translateY(600px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+#signup-button {
+  background-color: #4bace9;
+  color: white;
+  margin: 18px 0;
+  border: none;
+}
+
+#signup-button:hover {
+  background-color: #297caf;
+}
+
+#login-button {
+  border: 1px solid #4bace9;
+  background-color: white;
+  color: #4bace9;
+}
+
+#login-button:hover {
+  background-color: #eff9ff;
+}
+
+#bird-div {
+  animation-name: bird-flying;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+#our-bird {
+  font-size: 36px;
+  color: #4bace9;
+}
+
+.wing {
+  width: 55px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: lightblue;
+  border: none;
+}
+
+#left-wing {
+  position: relative;
+  top: -22px;
+  left: 13px;
+  animation-name: left-wing-flap;
+  transform-origin: right;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+#right-wing {
+  position: relative;
+  top: -24px;
+  left: -50px;
+  animation-name: right-wing-flap;
+  transform-origin: left;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes right-wing-flap {
+  5% {
+    transform: rotate(40deg);
+  }
+  15% {
+    transform: rotate(-40deg);
+  }
+  25% {
+    transform: rotate(40deg);
+  }
+  35% {
+    transform: rotate(-40deg);
+  }
+  45% {
+    transform: rotate(40deg);
+  }
+  55% {
+    transform: rotate(-40deg);
+  }
+  65% {
+    transform: rotate(40deg);
+  }
+  75% {
+    transform: rotate(-40deg);
+  }
+  85% {
+    transform: rotate(40deg);
+  }
+  95% {
+    transform: rotate(-40deg);
+  }
+}
+
+@keyframes left-wing-flap {
+  5% {
+    transform: rotate(-40deg);
+  }
+  15% {
+    transform: rotate(40deg);
+  }
+  25% {
+    transform: rotate(-40deg);
+  }
+  35% {
+    transform: rotate(40deg);
+  }
+  45% {
+    transform: rotate(-40deg);
+  }
+  55% {
+    transform: rotate(40deg);
+  }
+  65% {
+    transform: rotate(-40deg);
+  }
+  75% {
+    transform: rotate(40deg);
+  }
+  85% {
+    transform: rotate(-40deg);
+  }
+  95% {
+    transform: rotate(40deg);
+  }
+}
+
+#bird-and-wings {
+  animation-name: fly-bird;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fly-bird {
+  15% {
+    transform: translateY(-20px);
+  }
+
+  30% {
+    transform: translateY(-40px);
+  }
+
+  45% {
+    transform: translateY(-60px);
+  }
+
+  60% {
+    transform: translateY(-80px);
+  }
+
+  75% {
+    transform: translateY(-100px);
+  }
+
+  90% {
+    transform: translateY(-1000px);
+  }
+}
+
+#loginform-container {
+  position: absolute;
+  top: 28px;
+  animation-name: login-slide;
+  animation-duration: 2s;
+}
+
+@keyframes login-slide {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 64vw;
+  }
+}
+
+#actual-login-form {
+  display: flex;
+}
+
+#loginform-button {
+  height: 47px;
+  border-radius: 38%;
+  width: 68px;
+  border: 1px solid#4bace9;
+  background-color: white;
+  margin-left: 12px;
+  color: #4bace9;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#loginform-button:hover {
+  background-color: #eff9ff;
+}
+
+#bottom-container {
+  width: 100%;
+  border-top: 1px solid lightgray;
+  height: 45px;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+}
+
+#forgot-password:hover {
+  border-bottom: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.main-divs {
+  height: 96vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-and-signup-buttons {
+  width: 365px;
+  height: 35px;
+  border-radius: 24px;
+  font-size: 16px;
+  font-family: "Crete Round";
+}
+
+.login-inputs {
+  height: 44px;
+  border-radius: 4px;
+  padding-left: 9px;
+  font-size: 14px;
+  width: 198px;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.login-inputs:focus {
+  border: 1px solid #4bace9;
+}
+
+/* if the browser width is within our min-width and max-width, the styles
+we write in the media query will take effect. otherwise they wont.
+*/
+
+@media (min-width: 1060px) and (max-width: 1600px) {
+  #actual-login-form {
+    position: relative;
+    right: 70px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 1060px) {
+  .login-inputs {
+    display: none;
+  }
+  #forgot-password {
+    display: none;
+  }
+  #loginform-container {
+    left: 260px;
+    top: -8px;
+  }
+  #content-holder-white-half {
+    position: relative;
+  }
+}
+
+@media (max-width: 801px) and (min-width: 420px) {
+  #bottom-container {
+    height: 20vh;
+  }
+
+  #text-holder-blue-half {
+    position: relative;
+    top: -70px;
+  }
+}
+
+@media (max-width: 801px) and (min-width: 0px) {
+  #main-container-div {
+    flex-direction: column-reverse;
+  }
+
+  .main-divs {
+    height: 48vh;
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) and (min-width: 0px) {
+  .login-and-signup-buttons {
+    width: 325px;
+  }
+  #loginform-container {
+    left: 230px;
+    top: -8px;
+  }
+
+  i {
+    margin-right: 6px;
+    font-size: 22px;
+  }
+
+  #blue-half {
+    height: 40vh;
+  }
+
+  #bottom-container {
+    height: 12vh;
+  }
+}

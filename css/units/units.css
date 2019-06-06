@@ -24,7 +24,7 @@ we are still using 2rem. which means we our now doing
   font-size: 4rem;
 }
 */
-
+/*
 p {
   font-size: 80px;
   display: inline;
@@ -51,6 +51,33 @@ times the parent elements font size in pixels
    A WHOLE BUNCH
 */
 
+/*
 #will-use-em {
   font-size: 2em;
+}
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+viewport height and viewport width
+viewport height is just the whole screen from top to bottom
+on the browser
+viewport width is the whole screen from left to right
+
+percentages are based off the parent element
+
+div {
+  width: 50%;
+  height: 500px;
+  background-color: blueviolet;
+}
+*/
+div {
+  width: 40vw;
+  height: 50vh;
+  background-color: darkolivegreen;
 }

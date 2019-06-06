@@ -1,0 +1,23 @@
+p {
+  background-color: green;
+  font-size: 32px;
+  color: white;
+}
+
+p {
+  font-size: 72px;
+}
+
+p {
+  background: yellow;
+  color: purple;
+  font-size: 12px;
+}
+
+#hi {
+  background-color: green;
+}
+
+#hi {
+  background-color: blue;
+}

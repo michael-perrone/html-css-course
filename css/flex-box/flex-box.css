@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+display: flex; in a parent element makes that 
+element a flex container
+
+justify-content allows us to move items from left to right
+justify-content: flex-start, flex-end, center, space-around, space-between
+you use justify-content inside your flex container
+it aligns items along the main axis which like we said
+is left to right
+
+we want the items to be aligned or pushed to the left
+ALL USING JUSTIFY CONTENT
+flex-start means items are aligned to the left
+
+flex-end means items are aligned to the right or pushed to the right
+
+center when using justify content
+
+space-between gives an even space between all of our elements
+in the flex container
+
+space-around gives us a smaller space on the edges of our browser
+but still gives a larger space between our elements
+
+/////////////////////////
+align-items
+
+align-items: flex-start; means items inside a container
+will start at the top of the container
+
+align-items: center; items will be aligned in the middle
+of the cross axis, between the top and bottom
+
+align-items: flex-end; items will be aligned at the bottom of the container
+
+remember, flex-start and flex-end start at the left or right or top or bottom
+of the div, not the whole viewport
+////////////////////////////////////
+
+flex-direction: row; is the default... main-axis moves from left to right
+cross-axis moves from top to bottom
+justify-content and align-items work exactly how they were
+introduced
+
+flex-direction: row-reverse; is the reverse of row...
+the main axis moves from left to right. so if you had multiple elements
+in a flex container. the order seems like it has been reversed
+from left to right, and now its right to left. 
+the cross-axis is still moving from top to bottom;
+justify-content:flex-start starts on the right
+justify-content:flex-end ends on the left
+align items still works the same exact way because our cross 
+axis did not change
+
+flex-direction: column; the main axis is now moving from top
+to bottom. our elements in our container are no longer aligned
+horizontally, they are now aligned vertically.
+justify-content: flex-start; will move our items to the top of our flex-container
+justify-content: flex-end; will move our items to the bottom of our flex-container
+cross-axis is now from left to right... so align-items
+will now move items from left to right
+align-items:flex-start; will keep items to the left
+align-items:flex-end; will move items to the right
+
+
+flex-direction: column-reverse... is the opposite of column
+in terms of the main axis is now moving from bottom to top.
+justify-content: flex-start; will keeps items at the bottom of the flex-container
+justify-content: flex-end; will move items to the top of our container
+
+
+flex-wrap: wrap; lets elemenets overflow to the next line, and keeps their
+natural height and width
+
+when we have more than one row of content, align-content will
+align those rows the same justify-content does with its
+individual properties
+
+align-self allows us to place a flex-item among the div
+without it having to be connect to its other div counterparts
+
+a flex-item is an element that is located inside a flex-container
+
+align-self can be used on flex-items
+flex-containers can also be flex-items if they are located
+inside a flex-container
+
+flex-grow values start at 0 by default just like order
+also takes in a number like order
+the value cannot be negative
+
+*/
+#div-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#div1 {
+  background-color: gold;
+  height: 200px;
+  width: 200px;
+  flex-grow: 3;
+}
+
+#div2 {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  flex-grow: 1;
+}
+#div3 {
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+  flex-grow: 2;
+}
+
+#div4 {
+  background-color: green;
+  height: 200px;
+  width: 200px;
+  flex-grow: 1;
+}

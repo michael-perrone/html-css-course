@@ -1,0 +1,100 @@
+div {
+  margin-top: 100px;
+  margin-left: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  background-color: blue;
+  color: white;
+}
+
+/* positive degrees rotate things clockwise
+    negative degerees rotate things counter clock
+    there is other values besides degrees
+    but no one uses them
+    transform-origin helps us decide where the rotation start from
+    360 degrees is a full flip
+*/
+
+#will-be-rotated {
+  margin: 300px;
+  border-radius: 3px;
+  width: 270px;
+  height: 6px;
+  transform-origin: left;
+  background-color: rgba(0, 128, 0, 0.2);
+  border: none;
+  transition-duration: 5s;
+  transition-timing-function: steps(11, jump-start);
+  transition-property: transform, background-color, height;
+}
+
+#will-be-rotated:focus {
+  transform: rotate(900deg) scale(2);
+  background-color: rgb(255, 255, 0);
+  height: 100px;
+}
+
+/* 
+    transform-origin does nothing
+    translateX and translateY
+    theres also a translate shorthand
+    translateX moves elements left or right depending on
+    positive or negative values
+    translateY moves elements up or down depending on positive or negative values
+    for the shorthand there is just translate without specifcying X or y
+    X is the first value and Y is the second value in shorthand
+*/
+
+#will-be-translated {
+  transform: translateX(200px);
+  animation-name: slide;
+  animation-duration: 1s;
+  background-color: purple;
+}
+
+/*
+x and y scale
+same ideas apply with moving left or right with x and top bottom with y
+transform origin will allow us to decide which way the scale moves
+scale shorthand works the same way, x first, y second
+*/
+/* pseudo classes are commonly used with animations and transforms */
+
+#will-be-scaled {
+  transition-duration: 0.1s;
+  opacity: 1;
+}
+
+#will-be-scaled:hover {
+  transform: scale(5);
+  opacity: 0;
+}
+/* not that important */
+#will-be-skewed {
+  margin-top: 300px;
+}
+
+#will-be-skewed:hover {
+  transform: skew(-10deg, -15deg);
+}
+
+/* use the @keyframes
+   give the keyframe a name
+   from with brackets
+   put the code inside those brackets where you
+   want the animation to start
+   to is how you want the animation to finish
+*/
+@keyframes slide {
+  from {
+    background-color: green;
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(200px);
+    background-color: purple;
+  }
+}

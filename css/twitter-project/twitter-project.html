@@ -1,0 +1,93 @@
+<!--
+    font awesome is a library that we can gain access
+    to using a cdn. a cdn is a content delivery network.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Crete+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="twitter-project.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main-container-div">
+      <div class="main-divs" id="blue-half">
+        <div id="text-holder-blue-half">
+          <p><i class="fas fa-search"></i>Follow your interests.</p>
+          <p>
+            <i class="fas fa-user-friends"></i>Hear what people are talking
+            about.
+          </p>
+          <p><i class="far fa-comments"></i>Join the conversation.</p>
+        </div>
+      </div>
+      <div class="main-divs">
+        <div id="content-holder-white-half">
+          <div id="loginform-container">
+            <form id="actual-login-form">
+              <input
+                class="login-inputs"
+                type="text"
+                placeholder="Phone, email, or username"
+              />
+              <div style="margin-left: 16px;">
+                <input
+                  class="login-inputs"
+                  type="password"
+                  placeholder="Password"
+                />
+                <p id="forgot-password" style="color: lightgray; width: 114px;">
+                  Forgot password?
+                </p>
+              </div>
+              <input id="loginform-button" type="button" value="Log in" />
+            </form>
+          </div>
+          <div id="actual-content-holder-white-half">
+            <div id="bird-and-wings">
+              <button id="left-wing" class="wing"></button>
+              <i id="our-bird" class="fas fa-kiwi-bird"></i>
+              <button id="right-wing" class="wing"></button>
+            </div>
+            <h1 style="margin-bottom: 50px;">
+              See what's happening in <br />
+              the world right now
+            </h1>
+            <p style="font-size: 20px; font-weight: bold;">
+              Join Twitter today.
+            </p>
+            <button
+              style="display: block"
+              class="login-and-signup-buttons"
+              id="signup-button"
+            >
+              Sign Up
+            </button>
+            <button
+              style="display: block"
+              class="login-and-signup-buttons"
+              id="login-button"
+            >
+              Log in
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="bottom-container"></div>
+  </body>
+</html>
