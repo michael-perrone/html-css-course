@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+select {
+  height: 35px;
+  width: 65px;
+  padding-left: 2px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+#nav-bar {
+  background-color: rgb(82, 116, 160);
+  height: 83px;
+  display: flex;
+  justify-content: center;
+}
+
+#nav-bar-content-container {
+  display: flex;
+  width: 990px;
+  justify-content: space-between;
+}
+
+#facebook-header {
+  color: white;
+  font-size: 46px;
+  align-self: flex-end;
+  font-weight: bold;
+  position: relative;
+  top: -9px;
+}
+
+#login-form {
+  display: flex;
+  color: white;
+  align-self: center;
+  font-size: 14px;
+  position: relative;
+  top: 4px;
+}
+
+#login-button {
+  height: 24px;
+  width: 46px;
+  background-color: rgb(99, 139, 190);
+  border: 1px solid black;
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+  align-self: center;
+}
+
+#forgot-password {
+  color: lightgray;
+}
+
+#main-container-below-nav {
+  background-color: rgb(233, 239, 245);
+  display: flex;
+  justify-content: center;
+  height: 630px;
+}
+
+#main-container-content-holder {
+  display: flex;
+  justify-content: space-between;
+  width: 990px;
+}
+
+#content-left-side {
+  position: relative;
+  top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 290px;
+}
+
+#sign-up-text {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#its-free-text {
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+#sign-up-button {
+  margin-top: 26px;
+  display: block;
+  height: 40px;
+  width: 180px;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(135, 168, 76);
+  border-radius: 8px;
+}
+
+#for-a-celebrity {
+  font-size: 16px;
+  color: rgb(95, 95, 95);
+  font-weight: 300;
+}
+
+#celebrity-text-holder {
+  padding-top: 24px;
+  margin-top: 18px;
+  border-top: 2px solid lightgray;
+}
+
+.sign-up-inputs {
+  height: 37px;
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+  font-size: 18px;
+  border: 1px solid gray;
+  margin-top: 18px;
+}
+
+.login-inputs {
+  height: 21px;
+  width: 150px;
+  margin: 3px 12px 3px 0;
+}
+
+.smaller-ptags-left-side {
+  font-size: 18px;
+}
+
+.longer-sign-up-inputs {
+  width: 416px;
+  display: block;
+  margin-top: 8px;
+}
+
+.birthday-gender-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: gray;
+  margin-top: 18px;
+}
+
+.margin-top-12px {
+  margin-top: 12px;
+}
+
+.radio-button-labels {
+  font-size: 20px;
+  margin-left: 2px;
+}
+
+.radios-moving-right {
+  margin-left: 18px;
+}
